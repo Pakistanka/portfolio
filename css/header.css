@@ -1,0 +1,51 @@
+.welcomeTitle div {
+    color: #ffffff;
+    font-size: 12px;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.welcomeTitle>.scrollDown {
+    width: 50px;
+    height: 50px;
+    background-image: url("../images/scrollDown.gif"), url("../images/scrollDownHover.gif");
+    background-position: 0 0, 0 -50px;
+    background-repeat: no-repeat;
+    background-color: #EC0462;
+    margin: 30px auto;
+    -webkit-transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+    -moz-transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+    -o-transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+    transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+}
+
+.welcomeTitle>.scrollDown.on {
+    background-position: 0 50px, 0 0;
+}
+
+#france .mainPicture {
+    background-color: #DCDBDC;
+}
+
+#france .welcomeTitle {
+    padding-top: 110px;
+}
+
+#france .welcomeTitle>h1 {
+    color: #db26a2;
+    font-size: 38px;
+    font-size: 3.8rem;
+    letter-spacing: 2rem;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.mainPicture {
+    background-image: url("../images/plateu.jpg");
+    height: 696px; 
+    background-position: 50% 0px;
+}

@@ -1,0 +1,225 @@
+.slide {
+    width: 100%;
+}
+.main-carousel {
+    width: 80%;
+    margin: 80px auto;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.main-carousel .descriptionPadding {
+    font-size: 17px;
+    font-size: 1.6rem;
+    line-height: 2.7rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    padding: 0px 90px;
+    text-align: center;
+}
+
+.main-carousel .descriptionPadding a {
+    color: #CA0A60;
+    text-decoration: none;
+}
+
+.main-carousel .descriptionPadding a:hover {
+    color: #3e3e3e;
+}
+
+.main-carousel .descriptionPadding>h1 {
+    color: #281823;
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    font-size: 3.5rem;
+    font-weight: 300;
+    padding: 0;
+    text-transform: none;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.main-carousel .skills_circles {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+    /* flex-direction: column; RESPONSIVE */
+    padding: 0 10px;
+}
+
+.main-carousel .skills_circles>div {
+    width: 165px;
+    height: 165px;
+    margin: 0 10px;
+    background-image: url("../images/france-grey-circle.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: 'Oswald', sans-serif;
+    color: #704663;
+    font-weight: 300;
+    font-size: 16px;
+    font-size: 1.6rem;
+    position: relative;
+}
+
+.main-carousel .skills_circles .text {
+    height: 135px;
+    border: 1px;
+    text-align: center;
+    padding: 30px;
+}
+
+.main-carousel .skills_circles h1 {
+    width: auto;
+    font-size: 20px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ca0a60;
+    margin-top: 10px;
+    opacity: 0;
+    padding: 0;
+}
+
+.main-carousel .skills_circles .svgCircle {
+    margin-left: 0;
+    margin-top: 0;
+    top: -1px;
+    left: -2px;
+    position: absolute;
+    background: none;
+}
+
+.main-carousel .skills_circles .activeThumb {
+    width: 35px;
+    height: 35px;
+    background-image: url("../images/france-thumb.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    bottom: -45px;
+    margin-left: 70px;
+    opacity: 0;
+}
+
+.main-carousel .skills_circles .svgCircle .circle-path {
+    stroke-dasharray: 1000px;
+    stroke-dashoffset: 1000px;
+}
+
+.main-carousel .skills_circles .svgCircle.animate .circle-path {
+    -webkit-animation: animCircle 1s ease forwards;
+    -o-animation: animCircle 1s ease forwards;
+    animation: animCircle 1s ease forwards;
+}
+
+@-webkit-keyframes animCircle {
+    to {
+        stroke-dashoffset: 520px
+    }
+}
+
+@-o-keyframes animCircle {
+    to {
+        stroke-dashoffset: 520px
+    }
+}
+
+@-moz-keyframes animCircle {
+    to {
+        stroke-dashoffset: 520px
+    }
+}
+
+@keyframes animCircle {
+    to {
+        stroke-dashoffset: 520px
+    }
+}
+
+.main-carousel .skills_softwares {
+    width: 600px;
+    height: 230px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main-carousel .skills_softwares>.row {
+    width: 100%;
+    height: 1px;
+    background-color: #8b8b8b;
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+}
+
+.main-carousel .skills_softwares>.columns {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: stretch;
+    -webkit-align-items: stretch;
+}
+
+.main-carousel .skills_softwares>.columns>.col {
+    /* background-color: #fff; */
+    width: 100px;
+    height: 230px;
+    text-align: center;
+    position: relative;
+    display: block;
+}
+
+.main-carousel .skills_softwares>.columns>.col>div {
+    width: 25px;
+    height: 0;
+    margin-left: 40px;
+    background-color: #ca0a60;
+    position: absolute;
+    bottom: 50px;
+}
+
+.main-carousel .skills_softwares>.columns>.col>h1 {
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #704663;
+    text-align: center;
+    margin: 0;
+    margin-bottom: -10px;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    opacity: 0;
+}
+
+.main-carousel .skills_circles+p {
+    font-size: 1.5rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    color: #776772;
+    text-align: center;
+    opacity: 1;
+    margin-top: 65px;
+    letter-spacing: 0.1rem;
+}
