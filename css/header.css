@@ -45,7 +45,8 @@
 }
 
 .mainPicture {
-    background-image: url("../images/plateu.jpg");
+    background-image: url("../images/valensol-2381.jpg");
     height: 696px; 
     background-position: 50% 0px;
+    background-size: cover;
 }

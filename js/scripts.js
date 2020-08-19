@@ -29,30 +29,30 @@
     return e
 });
 $(function() {
-    $.html5Loader({
-        filesToLoad: "spip.php?page=inc_preload.json",
-        onBeforeLoad: function() { $('<div class="stroke"></div><div class="countdown">0 %</div>').appendTo("#preload");
-            $("#preload > .stroke").delay(800).queue(function() { $(this).addClass("on").dequeue() });
-            $("#preload > img").delay(1200).queue(function() { $(this).addClass("on").dequeue() });
-            $("#preload > .countdown").delay(1400).queue(function() { $(this).addClass("on").dequeue() }) },
-        onUpdate: function(b) {
-            setTimeout(function() {
-                $("#preload > .countdown").html(b +
-                    " %");
-                100 == b && ($endTransition = "webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend", setTimeout(function() { $(window).scrollTop(0) }, 200), $("#preload > img").removeClass("on").on($endTransition, function() {
-                    $("#preload > .countdown").removeClass("on");
-                    $("#preload > .stroke").addClass("on2").on($endTransition, function() {
-                        $(this).addClass("on3");
-                        $(".upper, .lower").addClass("on").on($endTransition, function() {
-                            $(".logo a img").attr("src", "./WD_IMAGES/GLOBAL/animation-logo-lempens-design.gif").addClass("on");
-                            $("#preload").remove();
-                            setAnimLogo()
-                        })
-                    })
-                }))
-            }, 2E3)
-        }
-    });
+    // $.html5Loader({
+    //     filesToLoad: "spip.php?page=inc_preload.json",
+    //     onBeforeLoad: function() { $('<div class="stroke"></div><div class="countdown">0 %</div>').appendTo("#preload");
+    //         $("#preload > .stroke").delay(800).queue(function() { $(this).addClass("on").dequeue() });
+    //         $("#preload > img").delay(1200).queue(function() { $(this).addClass("on").dequeue() });
+    //         $("#preload > .countdown").delay(1400).queue(function() { $(this).addClass("on").dequeue() }) },
+    //     onUpdate: function(b) {
+    //         setTimeout(function() {
+    //             $("#preload > .countdown").html(b +
+    //                 " %");
+    //             100 == b && ($endTransition = "webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend", setTimeout(function() { $(window).scrollTop(0) }, 200), $("#preload > img").removeClass("on").on($endTransition, function() {
+    //                 $("#preload > .countdown").removeClass("on");
+    //                 $("#preload > .stroke").addClass("on2").on($endTransition, function() {
+    //                     $(this).addClass("on3");
+    //                     $(".upper, .lower").addClass("on").on($endTransition, function() {
+    //                         $(".logo a img").attr("src", "./WD_IMAGES/GLOBAL/animation-logo-lempens-design.gif").addClass("on");
+    //                         $("#preload").remove();
+    //                         setAnimLogo()
+    //                     })
+    //                 })
+    //             }))
+    //         }, 2E3)
+    //     }
+    // });
     $nav = $(".navButton");
     $subnav = $(".subnav");
     $main = $("#main");
@@ -93,10 +93,10 @@ $(function() {
             $bgpTo = "center 0px")
     }), (new ScrollScene({ triggerElement: "#luxembourg .mainPicture", triggerHook: .85, duration: $(window).height() + 800 })).addTo($controller).setTween(TweenMax.fromTo("#luxembourg .mainPicture", 1, { backgroundPosition: $bgpFrom }, { backgroundPosition: $bgpTo, ease: Linear.easeNone })));
     (new ScrollScene({ triggerElement: ".portfolio-tab", triggerHook: 1, duration: 200 })).on("end", function(b) { "REVERSE" == b.scrollDirection && $("#portfolio-details,#portfolio .prow, #top-left-fixed-block,.portfolio-tab,.portfolio-nav").removeClass("on") }).addTo($controller);
-    (new ScrollScene({ triggerElement: "#awards", triggerHook: .85, duration: $(window).height() + 400 })).setTween(TweenMax.to($(".raylight"), 3, { rotation: 180, ease: Linear.easeNone })).addTo($controller);
-    (new ScrollScene({ triggerElement: "#awards", triggerHook: .7, duration: $(window).height() - 150 })).on("start", function(b) { "FORWARD" == b.scrollDirection && countAwards() }).on("end", function(b) { "REVERSE" == b.scrollDirection && countAwards() }).addTo($controller);
+    // (new ScrollScene({ triggerElement: "#awards", triggerHook: .85, duration: $(window).height() + 400 })).setTween(TweenMax.to($(".raylight"), 3, { rotation: 180, ease: Linear.easeNone })).addTo($controller);
+    // (new ScrollScene({ triggerElement: "#awards", triggerHook: .7, duration: $(window).height() - 150 })).on("start", function(b) { "FORWARD" == b.scrollDirection && countAwards() }).on("end", function(b) { "REVERSE" == b.scrollDirection && countAwards() }).addTo($controller);
     (new ScrollScene({
-        triggerElement: "#awards",
+        // triggerElement: "#awards",
         triggerHook: .3,
         duration: $(window).height() /
             2

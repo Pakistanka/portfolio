@@ -59,6 +59,15 @@ h1 {
     z-index: 5;
 }
 
+.my-works {
+    width: 990px;
+}
+@media screen and (max-width: 1000px) {
+    .my-works {
+        width: auto;
+    }
+}
+
 
 /*LOGO - NAVIGATION*/
 
@@ -219,7 +228,7 @@ h1 {
 
 #top-left-fixed-block .subnav .logorub {
     margin-top: 15px;
-    margin-bottom: 8px;
+    margin-bottom: 0px;
 }
 
 #top-left-fixed-block .subnav>li:nth-child(2) .logorub,
