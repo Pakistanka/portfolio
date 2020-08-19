@@ -92,6 +92,11 @@ h1 {
 #top-left-fixed-block .logo {
     padding: 15px;
     background-color: #1d1d1d;
+    background-image: url("../images/photo.jpeg");
+    background-size: 100px auto;
+    background-repeat: no-repeat;
+    height: 100px;
+    background-position: center;
 }
 
 #top-left-fixed-block .logo img {
